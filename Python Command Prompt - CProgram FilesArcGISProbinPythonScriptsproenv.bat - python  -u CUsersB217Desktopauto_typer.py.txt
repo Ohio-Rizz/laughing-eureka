@@ -1,0 +1,544 @@
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>pip install pyperclip pynput
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pyperclip
+  Downloading pyperclip-1.11.0-py3-none-any.whl.metadata (2.4 kB)
+Collecting pynput
+  Downloading pynput-1.8.2-py2.py3-none-any.whl.metadata (32 kB)
+Requirement already satisfied: six in c:\program files\arcgis\pro\bin\python\envs\arcgispro-py3\lib\site-packages (frompynput) (1.16.0)
+Downloading pyperclip-1.11.0-py3-none-any.whl (11 kB)
+Downloading pynput-1.8.2-py2.py3-none-any.whl (92 kB)
+Installing collected packages: pyperclip, pynput
+Successfully installed pynput-1.8.2 pyperclip-1.11.0
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>import time
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>import threading
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>import pyperclip
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>from pynput import keyboard
+'from' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>from pynput.keyboard import Controller, Key
+'from' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>typer = Controller()
+'typer' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>typing_now = threading.Event()
+'typing_now' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>stop_typing = threading.Event()
+'stop_typing' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3># Delay between characters, in seconds
+'#' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>CHAR_DELAY = 0.04
+'CHAR_DELAY' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>def type_clipboard():
+'def' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    if typing_now.is_set():
+The syntax of the command is incorrect.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        return
+'return' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    text = pyperclip.paste()
+'text' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    if not text:
+The syntax of the command is incorrect.
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        print("Clipboard is empty.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        return
+'return' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    typing_now.set()
+'typing_now.set' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    stop_typing.clear()
+'stop_typing.clear' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    print(f"Typing {len(text)} characters...")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    try:
+'try:' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        for char in text:
+char was unexpected at this time.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            if stop_typing.is_set():
+The syntax of the command is incorrect.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>                print("Typing stopped.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>                break
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            # Type each character as keyboardinput
+'#' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            typer.type(char)
+'typer.type' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            time.sleep(CHAR_DELAY)
+The system cannot accept the time entered.
+Enter the new time:
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        else:
+'else:' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            print("Finished typing.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    except Exception as error:
+'except' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        print(f"Error: {error}")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    finally:
+'finally:' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        typing_now.clear()
+'typing_now.clear' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>def on_press(key):
+'def' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    # F8 starts typing clipboard contents
+'#' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    if key == Key.f8:
+The syntax of the command is incorrect.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        if not typing_now.is_set():
+The syntax of the command is incorrect.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            threading.Thread(
+'threading.Thread' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>                target=type_clipboard,
+'target' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>                daemon=True
+'daemon' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            ).start()
+').start' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    # ESC stops typing
+'#' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    elif key == Key.esc:
+'elif' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        stop_typing.set()
+'stop_typing.set' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>print("Auto Typer is ready.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>print("1. Copy your text.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>print("2. Click the target text field.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>print("3. Press F8 to type.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>print("4. Press ESC to stop typing.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>with keyboard.Listener(on_press=on_press) as listener:
+'with' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    listener.join()
+'listener.join' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>import time
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>import threading
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>import pyperclip
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>from pynput import keyboard
+'from' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>from pynput.keyboard import Controller, Key
+'from' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>typer = Controller()
+'typer' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>typing_now = threading.Event()
+'typing_now' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>stop_typing = threading.Event()
+'stop_typing' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3># Delay between characters, in seconds
+'#' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>CHAR_DELAY = 0.04
+'CHAR_DELAY' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>def type_clipboard():
+'def' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    if typing_now.is_set():
+The syntax of the command is incorrect.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        return
+'return' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    text = pyperclip.paste()
+'text' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    if not text:
+The syntax of the command is incorrect.
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        print("Clipboard is empty.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        return
+'return' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    typing_now.set()
+'typing_now.set' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    stop_typing.clear()
+'stop_typing.clear' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    print(f"Typing {len(text)} characters...")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    try:
+'try:' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        for char in text:
+char was unexpected at this time.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            if stop_typing.is_set():
+The syntax of the command is incorrect.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>                print("Typing stopped.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>                break
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            # Type each character as keyboardinput
+'#' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            typer.type(char)
+'typer.type' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            time.sleep(CHAR_DELAY)
+The system cannot accept the time entered.
+Enter the new time:
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        else:
+'else:' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            print("Finished typing.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    except Exception as error:
+'except' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        print(f"Error: {error}")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    finally:
+'finally:' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        typing_now.clear()
+'typing_now.clear' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>def on_press(key):
+'def' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    # F8 starts typing clipboard contents
+'#' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    if key == Key.f8:
+The syntax of the command is incorrect.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        if not typing_now.is_set():
+The syntax of the command is incorrect.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            threading.Thread(
+'threading.Thread' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>                target=type_clipboard,
+'target' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>                daemon=True
+'daemon' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>            ).start()
+').start' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    # ESC stops typing
+'#' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    elif key == Key.esc:
+'elif' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>        stop_typing.set()
+'stop_typing.set' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>print("Auto Typer is ready.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>print("1. Copy your text.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>print("2. Click the target text field.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>print("3. Press F8 to type.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>print("4. Press ESC to stop typing.")
+Unable to initialize device PRN
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>with keyboard.Listener(on_press=on_press) as listener:
+'with' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>    listener.join()
+'listener.join' is not recognized as an internal or external command,
+operable program or batch file.
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>notepad "%USERPROFILE%\Desktop\auto_typer.py"
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>python "%USERPROFILE%\Desktop\auto_typer.py"
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>python "%USERPROFILE%\Desktop\auto_typer.py"
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>type "%USERPROFILE%\Desktop\auto_typer.py"
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>type "%USERPROFILE%\Desktop\auto_typer.py"
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>type "%USERPROFILE%\Desktop\auto_typer.py"
+
+import time
+import threading
+import pyperclip
+from pynput import keyboard
+from pynput.keyboard import Controller, Key
+
+typer = Controller()
+busy = threading.Event()
+stop = threading.Event()
+CHAR_DELAY = 0.04
+
+
+def type_clipboard():
+    if busy.is_set():
+        return
+
+    text = pyperclip.paste()
+    if not text:
+        print("Clipboard is empty.")
+        return
+
+    busy.set()
+    stop.clear()
+    print(f"Typing {len(text)} characters...")
+
+    try:
+        for char in text:
+            if stop.is_set():
+                print("Typing stopped.")
+                break
+
+            # Handle line breaks explicitly
+            if char == "\r":
+                continue
+            elif char == "\n":
+                typer.press(Key.enter)
+            elif char == "\t":
+                typer.press(Key.tab)
+            else:
+                try:
+                    typer.type(char)
+                except Exception:
+                    print(f"Skipped unsupported character: {char!r}")
+
+            time.sleep(CHAR_DELAY)
+        else:
+            print("Finished typing.")
+
+    finally:
+        busy.clear()
+
+
+def on_press(key):
+    if key == Key.f8:
+        if not busy.is_set():
+            threading.Thread(
+                target=type_clipboard,
+                daemon=True
+            ).start()
+
+    elif key == Key.esc:
+        stop.set()
+
+
+print("Auto Typer is running.")
+print("Copy text, focus the target field, then press F8.")
+print("Press ESC to stop typing.")
+
+with keyboard.Listener(on_press=on_press) as listener:
+    listener.join()
+
+(arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>python -u "%USERPROFILE%\Desktop\auto_typer.py"
+Auto Typer is running.
+Copy text, focus the target field, then press F8.
+Press ESC to stop typing.
+Typing 22 characters...
+Finished typing.
+Typing 22 characters...
+Finished typing.
+Typing 49 characters...
+Finished typing.
+Typing 49 characters...
+Finished typing.
+Typing 49 characters...
+Finished typing.
+Typing 12 characters...
+Finished typing.
+Typing 12 characters...
+Finished typing.
+Typing 12 characters...
+Finished typing.
+Typing 12 characters...
+Finished typing.
+Typing 12 characters...
+Finished typing.
+Typing 12 characters...
+Finished typing.
+Typing 13 characters...
+Finished typing.
+Typing 13 characters...
+Finished typing.
